@@ -1,8 +1,16 @@
 aid: apero
 name: Apero
-description: 'Apero is a company surfaced as a portfolio company of initialized-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: enterprise-saas. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Apero Health is a San Francisco-based, Y Combinator-backed healthcare
+  technology company that provides an integrated practice-management and
+  revenue-cycle-management (RCM) platform for medical practices. Its cloud
+  software unifies scheduling, clinical visit notes, insurance eligibility
+  verification and claims billing, patient billing and payments, e-prescriptions,
+  and financial reporting, and claims to reduce billing time by up to 80% while
+  helping practices scale operations. Apero exposes a fully-featured REST API,
+  webhooks, and CSV import that connect healthcare and finance workflows, and
+  integrates with payers (Aetna, Cigna, UnitedHealthcare, Blue Cross Blue Shield)
+  and platforms including Stripe, QuickBooks Online, Google, and Snowflake.
 url: https://raw.githubusercontent.com/api-evangelist/apero/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +18,78 @@ x-backed-by:
 - initialized-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://cdn.prod.website-files.com/642de057e0489a5a784c3b68/642de057e0489a03594c3d2b_Frame%2039.svg
 tags:
 - Company
 - Enterprise Saas
-apis: []
+- Healthcare
+- Health Tech
+- Revenue Cycle Management
+- Medical Billing
+- Practice Management
+- Insurance
+- Payments
+- API
+- Webhooks
+apis:
+- name: Apero Health API
+  description: >-
+    Apero's fully-featured REST API connecting healthcare and finance workflows
+    for medical practices, with webhooks and CSV import. Developer documentation
+    is gated behind an Apero account login.
+  humanURL: https://docs.aperohealth.com/
+  baseURL: https://api.aperohealth.com
+  properties:
+  - type: Documentation
+    url: https://docs.aperohealth.com/
+  - type: Webhooks
+    url: https://docs.aperohealth.com/webhooks
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/apero-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/apero-lifecycle.yml
+- type: StatusPage
+  url: https://aperostatus.com
+- type: DeveloperPortal
+  url: https://docs.aperohealth.com/
+- type: Documentation
+  url: https://docs.aperohealth.com/
+- type: Webhooks
+  url: https://docs.aperohealth.com/webhooks
+- type: SignUp
+  url: https://app.aperohealth.com/signup
+- type: Login
+  url: https://app.aperohealth.com/login
+- type: Support
+  url: https://aperohealth.com/contact
+- type: TermsOfService
+  url: https://aperohealth.com/terms
+- type: PrivacyPolicy
+  url: https://aperohealth.com/privacy
 - type: Website
   url: https://aperohealth.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

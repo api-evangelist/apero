@@ -1,0 +1,17 @@
+generated: '2026-07-17'
+method: searched
+source: https://aperohealth.com/ (footer) + https://aperostatus.com
+versioning:
+  scheme: uri-path
+  current: null
+  docs: https://docs.aperohealth.com/
+  note: >-
+    Apero exposes a versioned REST API at https://api.aperohealth.com. The
+    developer documentation (docs.aperohealth.com) is gated behind an account
+    login, so the concrete version identifier and deprecation policy could not
+    be captured from a public page.
+status_page: https://aperostatus.com
+sla:
+  url: null
+  uptime_target: null
+deprecated_operations: []
